@@ -20,3 +20,5 @@ def get_predictions(stocks: List[pd.DataFrame]) -> List[pd.DataFrame]:
     forecast[['ds', 'yhat', 'yhat_lower', 'yhat_upper']]
 
     predicions.append(forecast)
+
+  return predicions
