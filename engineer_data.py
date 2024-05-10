@@ -97,8 +97,3 @@ class Indicators():
         self.df = self.addColumns()
 
         return self.df 
-
-filepath = "data/sampleALE.csv"
-
-indicators = Indicators()
-df = indicators.engineerData(filepath)
