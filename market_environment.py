@@ -9,8 +9,6 @@ df = pd.read_csv('data/dane_close.csv', sep=';')
 names = df.columns[2:]
 stocks_mapping = {name: i for i, name in enumerate(names)}
 
-print(stocks_mapping)
-
 
 class Markets:
   def __init__(self, stocks: List[pd.DataFrame]):
@@ -58,9 +56,3 @@ def load_data() -> List[pd.DataFrame]:
     stocks.append(data)
 
   return stocks
-
-
-markets = Markets(load_data())
-
-markets.random_time()
-print(markets.get_current_state_of_stock('11B'), markets.index)
