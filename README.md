@@ -1,5 +1,12 @@
 # Colosseum
 ## Installation
-``pip install -r requirements.txt``
+```sh
+python -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+```
 ## Usage
-``./make_money.sh``
+```sh
+./make_money.sh
+```
